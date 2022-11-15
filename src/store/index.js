@@ -2,7 +2,6 @@ import Vue from 'vue';
 import Vuex, { createLogger } from 'vuex';
 import actions from './actions';
 import moduleCart from './cart';
-import getters from './getters';
 import mutations from './mutations';
 import moduleProduct from './product';
 import state from './stage';
@@ -51,7 +50,6 @@ const localStorage = (store) => {
 const store = new Vuex.Store({
   strict: process.env.NODE_ENV !== 'production',
   state,
-  getters,
   actions,
   mutations,
   modules: {
